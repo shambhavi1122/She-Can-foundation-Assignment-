@@ -39,19 +39,22 @@ nav {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 900;
-  color: #f5c6d8;
+  color: #b56f76;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .nav-logo {
-  width: 40px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
   object-fit: contain;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .logo span {
-  color: var(--pink);
+  color: #800020;
 }
 
 .nav-links {
@@ -312,5 +315,109 @@ footer {
 }
 
 .footer-bottom span {
+  color: #e8728e;
+}
+/* ── JOIN OUR TEAM ── */
+#join {
+  padding: 6rem 6%;
+  background: #1a0408;
+  border-top: 1px solid rgba(192, 57, 90, 0.25);
+}
+
+.join-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.join-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f5c6d8;
+  margin-bottom: 2rem;
+}
+
+.join-heading em {
+  color: #e8728e;
+  font-style: italic;
+}
+
+.join-body p {
+  color: #e8c4d0;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.9;
+  border-left: 2px solid #c0395a;
+  padding-left: 1rem;
+}
+/* ── CONTACT SECTION ── */
+#contact {
+  padding: 6rem 6%;
+  background: #2a0812;
+  border-top: 1px solid rgba(192, 57, 90, 0.25);
+  text-align: center;
+}
+
+.contact-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f5c6d8;
+  margin-bottom: 3rem;
+}
+
+.contact-heading em {
+  color: #e8728e;
+  font-style: italic;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: rgba(192, 57, 90, 0.08);
+  border: 1px solid rgba(232, 114, 142, 0.25);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(232, 114, 142, 0.6);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-type {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e8728e;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.contact-detail {
+  color: #e8c4d0;
+  font-size: 0.9rem;
+  text-decoration: none;
+  line-height: 1.6;
+  transition: color 0.3s;
+  word-break: break-word;
+}
+
+.contact-detail:hover {
   color: #e8728e;
 }
